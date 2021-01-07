@@ -1,9 +1,10 @@
 $(document).ready(function(){
     $('i.fa-bars').click(function(){
-        $('.hamburger-menu').toggle(function(){
-            $('.hamburger-menu').fadeIn(2000);
+        var hMenu = $('.hamburger-menu');
+        hMenu.toggle(function(){
+            hMenu.fadeIn(2000);
             $('i.fa-times').click(function(){
-                $('.hamburger-menu').fadeOut(1000);
+                hMenu.fadeOut(1000);
             });
         });
     });
