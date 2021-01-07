@@ -1,11 +1,13 @@
+var hMenu = $('.hamburger-menu');
+
 $(document).ready(function(){
-    $('i.fa-bars').click(function(){
-        var hMenu = $('.hamburger-menu');
+    $('.header-right > a > i.fa-bars').click(function(){
         hMenu.toggle(function(){
             hMenu.fadeIn(2000);
-            $('i.fa-times').click(function(){
+            $('.hamburger-menu > a > i.fa-times').click(function(){
                 hMenu.fadeOut(1000);
             });
         });
     });
 });
+
